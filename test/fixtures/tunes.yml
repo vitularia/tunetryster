@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tunename: MyText
+  tunekey: MyString
+  tunesource: MyText
+  tunenotes: MyText
+
+two:
+  tunename: MyText
+  tunekey: MyString
+  tunesource: MyText
+  tunenotes: MyText
