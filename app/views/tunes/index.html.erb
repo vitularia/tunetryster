@@ -1,7 +1,6 @@
-<h1>Tune List</h1>
-
-<table>
+<table class="table">
   <thead>
+    <tr><th><h1>Tune List</h1></th></tr>
     <tr>
       <th>Name</th>
       <th>Key</th>
@@ -16,18 +15,23 @@
   <tbody>
     <% @tunes.each do |tune| %>
       <tr>
-        <td><%= tune.tunename %></td>
-        <td><%= tune.tunekey %></td>
-        <td><%= tune.tunesource %></td>
-        <td><%= tune.tunenotes %></td>
-        <td><%= link_to 'Show', tune %></td>
-        <td><%= link_to 'Edit', edit_tune_path(tune) %></td>
-        <td><%= link_to 'Destroy', tune, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td width="200px"><%= tune.tunename %></td>
+        <td width="100px"><%= tune.tunekey %></td>
+        <td width="200px"><%= link_to 'Lesson Recording', tune.tunesource %></td>
+        <td width="300px"><%= tune.tunenotes %></td>
+        <td width="50px"><%= link_to 'Show', tune %></td>
+        <td width="50px"><%= link_to 'Edit', edit_tune_path(tune) %></td>
+        <td><%= link_to 'D', tune, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
+ 
+
 </table>
+<%= link_to 'New Tune', new_tune_path %>
+
+
 
 <br>
 
-<%= link_to 'New Tune', new_tune_path %>
+
