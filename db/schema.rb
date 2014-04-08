@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140317153135) do
+ActiveRecord::Schema.define(version: 20140405025749) do
 
   create_table "tunes", force: true do |t|
     t.text     "tunename"
@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 20140317153135) do
     t.text     "tunenotes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "lessons"
+    t.text     "sourcerecording"
   end
 
 end
